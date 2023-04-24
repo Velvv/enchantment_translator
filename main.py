@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import *
-from pyStandardGalacticAlphabet import SGA
+from pyStandardGalacticAlphabet.pyStandardGalacticAlphabet import SGA
 import pyglet, os
 
 sga = SGA()
