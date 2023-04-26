@@ -29,6 +29,12 @@ def remove_label():
 en_text = Entry(window)
 en_text.pack(pady=30)
 
+def copy():
+    r = tk()
+    r.clipbaord_clear()
+    r.clipbaord_append(printValue)
+    r.update
+
 Button(
     window,
     text="Translate", 
@@ -36,5 +42,13 @@ Button(
     pady=5,
     command=printValue
     ).pack()
+
+Button(
+    window, 
+    text="Copy", 
+    padx=10, 
+    pady=5, 
+    command=copy 
+)
 
 window.mainloop()
